@@ -1,0 +1,9 @@
+.imageWrapper {
+  background-color: #edf4ff;
+  height: 167px;
+  width: 167px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
