@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  width: 260px;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 20px rgba(81, 81, 81, 0.15));
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.imageWrapper {
+  background-color: #ffe681;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.upperLine {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.eventData {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.date {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.location {
+  margin: 0px;
+  font-size: 16px;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+}
+
+.thirdLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.participants {
+  float: left;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.btnParticipants {
+  border: none;
+  background-color: white;
+  font-size: 24px;
+  text-decoration:underline;
+}
+
+.btnParticipants:hover {
+  color: #1f1f1f;
+}
+
+.btnParticipants:active {
+  background-color: lightgrey;
+  color: black;
+}
+
+.btnMore {
+  width: 260px;
+  height: 70px;
+  background-color: #2a6ac8;
+  border-radius: 10px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.btnMore:hover {
+  background-color: #193f77;
+  color: rgb(177, 175, 175);
+}
+
+.btnMore:active {
+  background-color: #0f2647;
+  color: rgb(255, 255, 255);
+}

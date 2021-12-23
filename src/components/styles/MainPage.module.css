@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+.layout {
+  background-image: url(../assets/background.svg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftWrapper {
+  /* flex-grow: 1; */
+  /* margin: 0 auto; */
+  height: 100%;
+  width: 60%;
+  float: left;
+  padding-left: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightWrapper {
+  padding-top: 80px;
+  padding-left: 75px;
+  width: 40%;
+}
+
+.upperLine {
+  max-height: 167px;
+  max-width: 1012px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 1012px;
+  max-height: 215px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomLine {
+  max-width: 1012px;
+  display: flex;
+  padding-top: 24px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  width: 380px;
+}
+
+.calendar {
+  width: 380px;
+  height: 344px;
+  background-color: #2A6AC8;
+}
