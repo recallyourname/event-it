@@ -12,6 +12,10 @@ import NearestEvent from "../Functional/NearestEvent";
 import Events from "./Events";
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8a648475c96261e1300ac4a91bbcad7db0ddf5d4
 export default function MainPage() {
   return (
     <div className={s.layout}>
