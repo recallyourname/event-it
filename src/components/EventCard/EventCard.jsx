@@ -2,6 +2,7 @@ import React from "react";
 import s from "./styles/EventCard.module.css";
 import Image from "../assets/emoji.png";
 import Recent from "../assets/mockcircles.svg"
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function EventCard() {
   return (

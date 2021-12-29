@@ -1,130 +1,142 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 32px;
 }
 
 .firstView {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .avatar {
-    display:flex;
-    max-height: 168px;
-    max-width: 168px;
-    width: 8.75vw;
-    height: 15.56vh;
-    background-color: #EDF4FF;
-    border-radius: 20px;
+  display: flex;
+  max-height: 168px;
+  max-width: 168px;
+  width: 8.75vw;
+  height: 15.56vh;
+  background-color: #edf4ff;
+  border-radius: 20px;
 }
 
 .textures {
-    width: 100%;
-    position: absolute;
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  width: 100%;
+  position: absolute;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .content {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    width: 47.8125vw;
-    height: 41vh;
-    /* background-color: #EDF4FF; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 49.8125vw;
+  height: 43vh;
+  /* background-color: #EDF4FF; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .emojiWrapper {
-    background-color: #FFE681;
-    width: 13.33vw;
-    height: 23.7vh;
-    border-radius: 50%;
-    display: flex;
+  background-color: #ffe681;
+  width: 13.33vw;
+  height: 23.7vh;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .emoji {
-    width: 9.896vw;
-    height: auto;
-    /* height: 17.5925925926vw;
+  width: 9.896vw;
+  height: auto;
+  /* height: 17.5925925926vw;
     width: auto; */
 }
 
 .logo {
-    max-width: 450px;
-    max-height: 95px;
-    width: 23.4375%;
+  max-width: 450px;
+  max-height: 95px;
+  width: 23.4375%;
 }
 
 .leftColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.date, .location {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+.date,
+.location {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .rightColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnGroup{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .title {
-    font-size: 85px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .accept {
-    width: 31.25vw;
-    height: 9.26vh;
-    border: none; 
-    color: white;
-    background-color: #2A6AC8;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    font-size: 1.5rem;
+  width: 31.25vw;
+  height: 9.26vh;
+  border: none;
+  color: white;
+  background-color: #2a6ac8;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  font-size: 1.5rem;
 }
 
 .accept:hover {
-    background-color: #193f77;
-    color: rgb(177, 175, 175);
+  background-color: #193f77;
+  color: rgb(177, 175, 175);
 }
-  
+
 .accept:active {
-    background-color: #0f2647;
-    color: rgb(255, 255, 255);
+  background-color: #0f2647;
+  color: rgb(255, 255, 255);
 }
 
 .changeDecision {
-    border: none;
-    background-color: white;
-    font-size: 24px;
-    text-decoration:underline;
-  }
-  
+  border: none;
+  background-color: white;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
 .changeDecision:hover {
-    color: #1f1f1f;
+  color: #1f1f1f;
 }
 
 .changeDecision:active {
-    background-color: lightgrey;
-    color: black;
+  background-color: lightgrey;
+  color: black;
 }
+

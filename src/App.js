@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
         {/* <MainPage /> */}
-        <EventDetails />
+        {/* <EventDetails /> */}
     </div>
   );
 }
