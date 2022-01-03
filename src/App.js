@@ -7,7 +7,7 @@ import EventDetails from './components/pages/EventDetails';
 function App() {
   return (
     <div>
-        {/* <MainPage /> */}
+        <MainPage />
         {/* <EventDetails /> */}
     </div>
   );

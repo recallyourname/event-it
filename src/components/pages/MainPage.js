@@ -3,28 +3,22 @@ import Image from "../assets/logo.svg";
 import CreateEventButton from "../buttons/CreateEventButton";
 import Navbar from "../navigation/Navbar";
 import s from "../styles/MainPage.module.css";
-import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css';
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 import Avatar from "../Avatar/Avatar";
 import Functional from "../Functional/Functional";
 import WelcomeBack from "../Functional/WelcomeBack";
 import NearestEvent from "../Functional/NearestEvent";
 import Events from "./Events";
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 8a648475c96261e1300ac4a91bbcad7db0ddf5d4
 export default function MainPage() {
   return (
     <div className={s.layout}>
-  
       <div className={s.leftWrapper}>
         <img src={Image} alt="logo" className={s.logo} />
         <div className={s.upperLine}>
-          <Avatar />     
-          <Functional firstname={"Igor"} lastname={"Kutasevich"}/>
+          <Avatar />
+          <Functional firstname={"Igor"} lastname={"Kutasevich"} />
           <CreateEventButton />
         </div>
 
@@ -39,11 +33,10 @@ export default function MainPage() {
         </div>
         {/* <Calendar /> */}
       </div>
-    
+
       <div className={s.rightWrapper}>
         <Events />
       </div>
-
     </div>
   );
 }

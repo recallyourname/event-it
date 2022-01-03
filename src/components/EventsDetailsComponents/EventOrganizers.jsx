@@ -9,7 +9,7 @@ export default function EventOrganizers() {
                     <h2 className={s.organizersTitle}>Организатор(ы)</h2>
                     <div className={s.organizersCards}>
                         <div className={s.orgUser}>
-                            asdadasdasd
+                            ss
                         </div>
                     </div>
                 </div>    
