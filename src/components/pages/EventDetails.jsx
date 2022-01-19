@@ -18,7 +18,7 @@ export default function EventDetails() {
               <div className={s.container}>
                 <EventDetailsHeader />
 
-                <img src={textures} className={s.textures} />
+                <img src={textures} className={s.textures} alt="emoji" />
 
                 <EventDetailsContent />
               </div>

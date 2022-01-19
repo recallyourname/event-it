@@ -7,7 +7,7 @@ export default function EventDetailsContent() {
     <div className={s.content}>
       <div className={s.leftColumn}>
         <div className={s.emojiWrapper}>
-          <img src={emoji} className={s.emoji} />
+          <img src={emoji} className={s.emoji} alt="emoji"/>
         </div>
 
         <div className={s.date}>Friday, Nov 8</div>
