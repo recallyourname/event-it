@@ -4,8 +4,74 @@
   background-color: #edf4ff;
   border-radius: 20px;
   display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  
+}
+
+.imageWrapper {
+  background-color: #ffe681;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.description {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.dateAndLocation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.btnMore {
+  width: 260px;
+  height: 70px;
+  background-color: #2a6ac8;
+  border-radius: 10px;
+  border: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 60px;
+  font-size: 20px;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  cursor: pointer;
+}
+
+.btnMore:hover {
+  background-color: #193f77;
+  color: rgb(177, 175, 175);
+}
+
+.btnMore:active {
+  background-color: #0f2647;
+  color: rgb(255, 255, 255);
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
 }

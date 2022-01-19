@@ -44,7 +44,7 @@ export default function MainPage() {
 
           <div className={s.bottomLine}>
             <div className={s.leftContainer}>
-              <WelcomeBack />
+              <WelcomeBack firstname={userContext.firstname}/>
               <Calendar className={s.calendar} />
             </div>
             <div className={s.rightContainer}>
