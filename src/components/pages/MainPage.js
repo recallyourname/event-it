@@ -37,7 +37,7 @@ export default function MainPage() {
         <div className={s.leftWrapper}>
           <img src={Image} alt="logo" className={s.logo} />
           <div className={s.upperLine}>
-            <Avatar />
+            <Avatar user={userContext.email}/>
             <Functional firstname={userContext.firstname} lastname={userContext.lastname} />
             <CreateEventButton onClick={handleCreateEvent}/>
           </div>
