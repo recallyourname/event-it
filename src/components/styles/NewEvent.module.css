@@ -15,6 +15,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.returnWrapper {
+	display: flex;
+	justify-content: start;
+}
+
 input {
 	width: 400px;
 }

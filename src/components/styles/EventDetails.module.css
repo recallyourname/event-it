@@ -15,12 +15,20 @@
   height: 100vh;
 }
 
+.avatarWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #2a6ac8;
+}
+
 .avatar {
   display: flex;
-  max-height: 168px;
-  max-width: 168px;
-  width: 8.75vw;
-  height: 15.56vh;
+  max-height: 120px;
+  max-width: 120px;
   background-color: #edf4ff;
   border-radius: 20px;
 }
@@ -72,6 +80,7 @@
   max-width: 450px;
   max-height: 95px;
   width: 23.4375%;
+  cursor: pointer;
 }
 
 .leftColumn {

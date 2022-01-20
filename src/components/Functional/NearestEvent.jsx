@@ -2,11 +2,13 @@ import React from "react";
 import s from "./styles/NearestEvent.module.css";
 import events from "../../mockup/events";
 import emoji from "../assets/emoji.png";
+import { useNavigate } from "react-router-dom";
 
 export default function NearestEvent() {
   var nearestEvent;
   var tempDate = new Date("2030-01-01");
   var compare;
+	const navigate = useNavigate()
 
   events.forEach((event) => {
     compare = new Date(event.date);
@@ -40,7 +42,14 @@ export default function NearestEvent() {
         <button
           className={s.btnMore}
           onClick={() => {
-            console.log("btn more");
+            navigate(`/event/${eventContext.id}`, {
+              state: {
+                description: eventContext.description,
+                title: eventContext.event_title,
+                date: eventContext.date,
+                location: eventContext.location,
+              },
+            });
           }}
         >
           More

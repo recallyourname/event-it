@@ -1,7 +1,7 @@
 import React from "react";
 import s from "../styles/NewEvent.module.css";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function NewEvent() {
   const [data, setData] = useState(null)
@@ -39,7 +39,11 @@ export default function NewEvent() {
 
   return (
     <div className={s.container}>
-      <h1 className={s.title}>Create new Event!</h1>
+      <div className={s.returnWrapper}>
+        <Link to="/" style={{ textDecoration: 'none', color: "#2A6AC8", fontWeight: "bold", marginTop: "10px" }}>{"Return"}</Link>
+      </div>
+      
+      <h1 className={s.title} style={{color: "#2A6AC8"}}>Create new Event!</h1>
       <form action="" onSubmit={handleSubmit}>
         <p>Event Title</p>
         <input

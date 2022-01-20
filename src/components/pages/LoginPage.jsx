@@ -3,6 +3,7 @@ import s from "../styles/LoginPage.module.css";
 import { useState } from "react";
 import users from "../../mockup/users";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/logo.svg"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -36,29 +37,28 @@ export default function LoginPage() {
         isLoggedIn === "true" && navigate("/")
       }
       <div className={s.container}>
+        <img src={logo} alt="logo" width={"400px"}/>
         <form onSubmit={handleSubmit}>
           <div className={s.firstLine}>
-            <label className={s.label}>
-              Email:
+              <p>Email:</p>
               <input
                 type="text"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-            </label>
           </div>
           <div className={s.secondLine}>
-            <label className={s.label}>
-              Password:
+              <p>Password:</p>
               <input
                 type="password"
                 name="password"
                 onChange={(e) => setPassword(e.target.value)}
               />
-            </label>
           </div>
-          <input type="submit" value="Sign In" className={s.signInButton} />
+          <div className={s.btnWrapper}>
+            <input type="submit" value="Sign In" className={s.signInButton} />
+          </div>
         </form>
       </div>
     </>

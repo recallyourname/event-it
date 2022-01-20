@@ -9,26 +9,39 @@ import Functional from "../Functional/Functional";
 import WelcomeBack from "../Functional/WelcomeBack";
 import NearestEvent from "../Functional/NearestEvent";
 import Events from "./Events";
-import events from "../../mockup/events";
+import eventsList from "../../mockup/events";
+import users from "../../mockup/users";
 import { useNavigate } from "react-router-dom";
 
 export default function MainPage() {
   const navigate = useNavigate();
-  const isLoggedIn = localStorage.getItem("isLoggedIn")
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  var events = [];
 
   var userContext = {
     email: localStorage.getItem("email"),
     firstname: localStorage.getItem("firstname"),
+    events: [],
     lastname: localStorage.getItem("lastname"),
-    userId: localStorage.getItem("userId")
-  }
+    userId: localStorage.getItem("userId"),
+  };
+
+  userContext.events = users.find(
+    (element) => element.email === userContext.email
+  ).events;
+
+  userContext.events.forEach((element) => {
+    events.push(
+      eventsList.find((event) => event.id === element)
+    );
+  });
 
   function handleCreateEvent() {
-    navigate('/new')
+    navigate("/new");
   }
 
   useEffect(() => {
-    isLoggedIn === "false" && navigate("/login")
+    isLoggedIn === "false" && navigate("/login");
   });
 
   return (
@@ -37,14 +50,17 @@ export default function MainPage() {
         <div className={s.leftWrapper}>
           <img src={Image} alt="logo" className={s.logo} />
           <div className={s.upperLine}>
-            <Avatar user={userContext.email}/>
-            <Functional firstname={userContext.firstname} lastname={userContext.lastname} />
-            <CreateEventButton onClick={handleCreateEvent}/>
+            <Avatar user={userContext.email} />
+            <Functional
+              firstname={userContext.firstname}
+              lastname={userContext.lastname}
+            />
+            <CreateEventButton onClick={handleCreateEvent} />
           </div>
 
           <div className={s.bottomLine}>
             <div className={s.leftContainer}>
-              <WelcomeBack firstname={userContext.firstname}/>
+              <WelcomeBack firstname={userContext.firstname} />
               <Calendar className={s.calendar} />
             </div>
             <div className={s.rightContainer}>

@@ -6,8 +6,10 @@ import EventOrganizers from "../EventsDetailsComponents/EventOrganizers";
 import ReactFullpage from "@fullpage/react-fullpage";
 import EventDetailsHeader from "../EventsDetailsComponents/EventDetailsHeader";
 import EventDetailsContent from "../EventsDetailsComponents/EventDetailsContent"
+import { useLocation } from "react-router-dom";
 
 export default function EventDetails() {
+  const location = useLocation();
   return (
     <ReactFullpage
       scrollingSpeed={500}
@@ -16,15 +18,16 @@ export default function EventDetails() {
           <ReactFullpage.Wrapper>
             <div className="section">
               <div className={s.container}>
+                
                 <EventDetailsHeader />
 
                 <img src={textures} className={s.textures} alt="emoji" />
 
-                <EventDetailsContent />
+                <EventDetailsContent title={location.state.title} date={location.state.date} location={location.state.location} />
               </div>
             </div>
             <div className="section">
-              <EventDescription />
+              <EventDescription description={location.state.description}/>
             </div>
             <div className="section">
               <EventOrganizers />

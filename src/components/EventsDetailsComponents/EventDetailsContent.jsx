@@ -2,7 +2,7 @@ import React from "react";
 import s from "../styles/EventDetails.module.css"
 import emoji from "../assets/image 117.svg";
 
-export default function EventDetailsContent() {
+export default function EventDetailsContent(props) {
   return (
     <div className={s.content}>
       <div className={s.leftColumn}>
@@ -10,13 +10,13 @@ export default function EventDetailsContent() {
           <img src={emoji} className={s.emoji} alt="emoji"/>
         </div>
 
-        <div className={s.date}>Friday, Nov 8</div>
+        <div className={s.date}>{props.date}</div>
 
-        <div className={s.location}>OmGTU, 6-200a</div>
+        <div className={s.location}>{props.location}</div>
       </div>
 
       <div className={s.rightColumn}>
-        <div className={s.title}>Event title</div>
+        <div className={s.title}>{props.title}</div>
 
         <div className={s.btnGroup}>
           <button className={s.accept}>Я иду!</button>
